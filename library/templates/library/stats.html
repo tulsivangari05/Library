@@ -1,0 +1,12 @@
+{% extends 'library/base.html' %}
+{% block title %}Statistics{% endblock %}
+{% block content %}
+<div class="card p-4 shadow">
+    <h2 class="text-center">Library Stats</h2>
+    <ul class="list-group mb-3">
+        <li class="list-group-item">Total Books: {{ stats.books_count }}</li>
+        <li class="list-group-item">Total Authors: {{ stats.authors_count }}</li>
+        <li class="list-group-item">Total Categories: {{ stats.categories_count }}</li>
+    </ul>
+</div>
+{% endblock %}
